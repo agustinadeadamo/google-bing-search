@@ -1,11 +1,17 @@
+/**
+ * @desc Dependencies
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+/**
+ * @desc Components
+ */
+import App from './App.jsx';
+
 ReactDOM.render(
   <React.StrictMode>
-      <div>Search app</div>
+      <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-export default HelloWorld;
