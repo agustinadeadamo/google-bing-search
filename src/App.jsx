@@ -14,11 +14,16 @@ import Store from './Config/Store';
  */
 import GlobalStyle from './MainStyles/GlobalStyle';
 
+/**
+ * @desc Routes
+ */
+import Routes from './Config/Routes.jsx';
+
 const App = () => (
   <>
     <GlobalStyle />
     <Provider store={Store}>
-      Search app
+      <Routes />
     </Provider>
   </>
 );
