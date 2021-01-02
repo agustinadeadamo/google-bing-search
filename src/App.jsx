@@ -17,6 +17,9 @@ import GlobalStyle from './MainStyles/GlobalStyle';
 const App = () => (
   <>
     <GlobalStyle />
+    <Provider store={Store}>
+      Search app
+    </Provider>
   </>
 );
 
