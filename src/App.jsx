@@ -12,20 +12,26 @@ import Store from './Config/Store';
 /**
  * @desc Styled Components
  */
-import GlobalStyle from './MainStyles/GlobalStyle';
+import { GlobalStyle } from './Mainstyles/GlobalStyle';
+
+/**
+ * @desc Components
+ */
+import Header from './Components/Header/Header';
 
 /**
  * @desc Routes
  */
-import Routes from './Config/Routes.jsx';
+import Routes from './Config/Routes';
 
 const App = () => (
-  <>
-    <GlobalStyle />
-    <Provider store={Store}>
-      <Routes />
-    </Provider>
-  </>
+    <>
+        <Header />
+        <GlobalStyle />
+        <Provider store={Store}>
+            <Routes />
+        </Provider>
+    </>
 );
 
 export default App;

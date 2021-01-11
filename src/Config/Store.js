@@ -12,7 +12,7 @@ import Middlewares from './Middlewares';
 /**
  * @desc Reducers
  */
-import Reducers from '../Reducer/Reducer';
+import Reducers from 'Reducer/Reducer';
 
 /**
  * @desc Store

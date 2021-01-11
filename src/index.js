@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 /**
  * @desc Components
  */
-import App from './App.jsx';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>

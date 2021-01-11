@@ -8,18 +8,18 @@ import thunk from 'redux-thunk';
  * @desc Middlewares
  */
 export default (() => {
-  /**
-   * @desc Indicates enviroment.
-   */
-  const isDevelopment = process.env.NODE_ENV === 'development';
+    /**
+     * @desc Indicates enviroment.
+     */
+    const isDevelopment = process.env.NODE_ENV === 'development';
 
-  const Middlewares = [thunk];
+    const Middlewares = [thunk];
 
-  // Middlewares of development
-  if (isDevelopment) {
-    // Logger of redux.
-    Middlewares.push(logger);
-  }
+    // Development middleware
+    if (isDevelopment) {
+        // Redux logger.
+        Middlewares.push(logger);
+    }
 
-  return Middlewares;
+    return Middlewares;
 })();

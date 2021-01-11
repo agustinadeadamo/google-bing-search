@@ -1,26 +1,20 @@
 /**
- * @desc Actions
+ * @desc Dependencies
  */
-  
-/**
- * @desc Initial State
- */
-const InitialState = {};
-  
-/**
- * @desc Reducer.
- *
- * @param { Object } state
- * @param { Object } action
- *
- * @return { Object }
- */
-const Reducer = (state = InitialState, action) => {
-switch (action.type) {
-    default:
-    return state;
-}
-};
+import { combineReducers } from 'redux';
 
-export default Reducer;
+/**
+ * @desc Reducers
+ */
+import SearchViewReducer from './SearchViewReducer';
+import ErrorReducer from './ErrorReducer';
+
+/**
+ * @desc Export the reducers
+ */
+const Reducer = combineReducers({
+    SearchViewReducer,
+    ErrorReducer
+});
   
+  export default Reducer;

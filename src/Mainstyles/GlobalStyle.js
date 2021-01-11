@@ -6,24 +6,23 @@ import { createGlobalStyle } from 'styled-components';
 /**
  * @desc Variables
  */
-import Colors from './Variables';
+import { Colors } from './Variables';
 
-const GlobalStyle = createGlobalStyle`
-  *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    box-sizing: border-box;
-    color: ${Colors.grey};
-  }
+export const GlobalStyle = createGlobalStyle`
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        box-sizing: border-box;
+        color: ${Colors.grey};
+        font-family: Helvetica, sans-serif;
+    }
 
-  ol, ul {
-    list-style: none;
-  }
+    ol, ul {
+        list-style: none;
+    }
 `;
-
-export default GlobalStyle;

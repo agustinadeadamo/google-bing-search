@@ -4,7 +4,8 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
+    filename: '[name].js',
+    sourceMapFilename: "[name].js.map"
   },
   entry: "./src/index.js",
   resolve: {
@@ -12,6 +13,7 @@ module.exports = {
     alias: {
       react: path.join(__dirname, 'node_modules', 'react'),
     },
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
@@ -40,4 +42,5 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
+  devtool: "eval-cheap-module-source-map"
 };
