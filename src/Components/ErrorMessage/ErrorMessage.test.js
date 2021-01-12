@@ -37,13 +37,13 @@ describe('[Error Message Component]',() => {
 
     it('Matches snapshot', () => {
         
-        const input = create(
+        const errorMessage = create(
             <Provider store={Store}>
                 <ErrorMessage message={MessageError.APP_ERROR}/>
             </Provider>
         ).toJSON;
 
-        expect(input).toMatchSnapshot();
+        expect(errorMessage).toMatchSnapshot();
         
     });
 
